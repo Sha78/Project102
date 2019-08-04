@@ -103,19 +103,59 @@ h1{
   width:25px;
   background-color:white;
   border-radius:30px;
-  animation:move 4s linear infinite;
+  position:relative;
+  margin:0;
+  padding:0;
+  animation:move 5s linear infinite;
 }
 @keyframes move{
   0%{
-    transform:translate(0);
+    top:100%;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:yellow;
+    
+  }
+  5%{
+    background-color:red;
+    top:100%;
+    bottom:0;
+  }
+  10%{
+    background-color:green;
+    top:0;
+    bottom:100%;
+  }
+  15%{
+    background-color:aqua;
+    top:100%;
+    bottom:0;
+  }
+
+  25%{
+    background-color:purple;
+    top:0;
+    bottom:100%;
   }
  
-  50%{
-    transform:translate(1500px ,60px);
+  40%{
+    top:100%;
+    bottom:0;
+    background-color:red;
+  }
+
+  75%{
+    background-color:blue;
+    top:0;
+    bottom:100%; 
   }
   
   100%{
-    transform:translate(0);
+    top:100%;
+    bottom:0;
+    left:100%;
+    background-color:orange;
   }
 }
     </style>
